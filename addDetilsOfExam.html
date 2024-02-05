@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/createExam.css">
+  <title>Create Exam</title>
+</head>
+
+<body>
+  <div class="container">
+    <main class="main-details-exam d-flex align-items-center justify-content-center">
+      <section class="col-md-10 col-lg-10 col-sm-10 col-12 pe-5 py-5 shadow rounded-5 d-flex">
+        <div class=" imag-contenar col-6">
+          <img src="images/detailsExam.svg" alt="" srcset="">
+        </div>
+        <form id="detailsOfExam" class="col-6 ps-4" method="get" action="AddExam.html">
+          <h1 class="text-center mb-5">Details OF Exam</h1>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Exam Name</label>
+            <!-- <input type="text" class="form-control" name="examName" id="examName" placeholder="enter name of exam..."> -->
+            <select name="examName" id="examName" class="form-select">
+         
+            </select>
+            <small id="examNameError" class="text-danger"></small>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Number Of Questions</label>
+            <input type="number" class="form-control" name="numberOfQuestions" id="numberOfQuestions"
+              placeholder="enter number of questions">
+            <small id="examQuestionError" class="text-danger"></small>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Number Of Options</label>
+            <select name="numberOfOptions" id="numberOfOptions" class="form-control">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              
+            </select>
+            <!-- <input type="number" class="form-control" name="numberOfOptions" id="numberOfOptions"
+              placeholder="enter number of sptions">
+            <small id="QuestionOptionsError" class="text-danger"></small> -->
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Exam Duration</label>
+            <input type="number" class="form-control" name="examDuration" id="examDuration"
+              placeholder="enter exam duration">
+            <small id="examDurationError" class="text-danger"></small>
+          </div>
+          <button class="btn btn-bg-color w-100 fs-4 rounded-4" type="submit">Create Exam</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  
+  <script type="module" src="js/validationDetails.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

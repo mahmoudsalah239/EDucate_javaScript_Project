@@ -1,0 +1,28 @@
+#vid_container{
+   z-index: -1;
+}
+
+#up_btn{
+    position: fixed; bottom: 1%; right: 1%;
+    display: none;
+}
+
+.div_img{
+    overflow: hidden;
+}
+
+.img:hover{
+    transform: scale(1.1);
+}
+.img{
+    transition: 1.3s;
+}
+
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/createExam.css">
+    <style>
+        .logo {
+            font-weight: bolder;
+            font-size: 3rem;
+        }
+
+        .info {
+            border-bottom: 1px solid rgb(231, 220, 220);
+        }
+
+        a * {
+            box-sizing: border-box;
+        }
+
+        .item {
+            border: 5px solid transparent;
+            cursor: pointer;
+        }
+
+        .item:hover {
+            background-color: gray;
+            border-left: 5px solid blue;
+
+        }
+
+        .trueSign {
+            background-color: green;
+            padding: 2px;
+            border-radius: 50%;
+        }
+
+        .content {
+            border: 2px solid rgb(239, 235, 235);
+            height: 65vh;
+            max-height: 65vh;
+            overflow: auto;
+        }
+
+        .vediotitle {
+            background-color: rgb(249, 249, 249);
+        }
+
+
+        #progress-bar {
+            width: 100%;
+            height: 5px;
+            background-color: #f0f0f0;
+            position: relative;
+            margin-top: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        #progress {
+            height: 100%;
+            background-color: #4caf50;
+            width: 0;
+            position: absolute;
+            transition: width 2s ease;
+        }
+
+        @media screen and (max-width:772px) {
+
+            .info .row,
+            .maincontent {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+    <title>CourseList</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="info">
+            <div class="row justify-content-between p-3">
+                <div class=" col-12 col-md-7 col-lg-6  d-flex  align-items-end">
+                    <div class="logo mx-lg-2">Educate</div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchBox" placeholder="Search"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                    </div>
+                </div>
+                <div class=" col-12  col-md-5 col-lg-6 d-flex align-items-center justify-content-end">
+                    <div class="notifection px-2">
+                        <i class="fa-regular fa-xl fa-bell"></i>
+                    </div>
+                    <div class="account d-flex align-items-center ">
+                        <div class=" fa-xl text-info" id="registerAndLogin">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid px-5 maincontent">
+        <div class="row maincontent">
+            <div class="col-md-3 col-lg-3 h-100 vediotitle ">
+                <h4 class="title">
+                    introduction to the professional Ceritifcate
+                    <strong id="courseName"class="text-info text-uppercase"></strong>
+                </h4>
+                <div class="content  accordion accordion-body " id="lessonList">
+
+                </div>
+                <div class="" id="btnExam">
+
+                </div>
+
+               
+            </div>
+            <div class=" col-md-9 col-lg-9">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MNHgu_vgXm0?si=qFtRdklPowyVJ8O8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/studentCourse.js"></script>
+    <script src="js/showNameOfUser.js"></script>
+</body>
+
+</html>

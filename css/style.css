@@ -1,0 +1,251 @@
+.text-color {
+    color: #049DD9;
+}
+
+.btn-bg-color {
+    background-color: #049DD9;
+    color: white;
+}
+
+.home-image {
+    background-image: url("../images/home.jpg");
+    background-color: #049DD9;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    padding: 0;
+    width: 23%;
+    transition: 1s;
+}
+
+.card:hover {
+    color: white !important;
+    background-color: #049DD9 !important;
+    transform: scale(1.05, 1.05);
+}
+
+.social i {
+    font-size: 40px;
+
+}
+
+.social i:hover {
+    color: white;
+}
+
+@media screen and (max-width:1700px) {
+    .service-itme {
+        width: 100%;
+        display: block;
+    }
+
+    .test {
+        display: block !important;
+    }
+
+    .card {
+        display: block;
+        width: 23%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .service-itme {
+        width: 100%;
+        display: block;
+    }
+
+    .test {
+        display: block !important;
+    }
+
+    .card {
+        display: block;
+        width: 45%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .service-itme {
+        width: 100%;
+        display: block;
+    }
+
+    .test {
+        display: block !important;
+    }
+
+    .card {
+        display: block;
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .custom-card {
+        justify-content: center !important;
+    }
+}
+
+
+
+.login_btn:hover {
+    background-color: white !important;
+    color: #049DD9 !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 991px) {
+    #log_img {
+        display: none;
+    }
+
+}
+
+@media print {
+    #print-exam {
+        display: none !important;
+    }
+}
+
+.body-image {
+    background-image: url("../images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh !important;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #9cadbc8f;
+    z-index: -1;
+}
+
+@media only screen and (max-width:766px) {
+    .row .fromInp {
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+
+.error {
+    display: none;
+}
+
+.nav-link:hover {
+    color: #049dd9;
+}
+
+.active {
+    color: #049dd9 !important;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Profile */
+#myDiv {
+    position: absolute;
+    bottom: -10px;
+    right: 15%;
+    font-size: 50px;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.close {
+    color: rgb(220, 15, 15);
+    position: absolute;
+    top: 15px;
+    z-index: 3000;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.lightboxImage {
+    width: 90%;
+    height: 300px;
+}
+
+.lightboxImage:hover {
+    opacity: .6;
+
+}
+
+@media screen and (max-width: 800px) {
+    .lightboxImage {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+/* pass exam */
+#examPass {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+#resultOfExam{
+    display: none;
+}
+
+
+/* certific */
+.fix {
+    clear: both;
+}
+
+.c2 {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+}
+
+.c1 {
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+}
+
+.cParent {
+    position: relative;
+}
+/* certificat */
+
+.myImageCertificat{
+    background-image: url("../images/certificat.jpg");
+    background-repeat: no-repeat;
+  background-size: 100%;
+  height: 180px;
+}
+.myImageCertificat:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
